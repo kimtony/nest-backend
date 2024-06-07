@@ -1,0 +1,22 @@
+{
+    "apps": {
+      "name": "nestjs-demo",
+      "script": "dist/main.js",
+      "cwd": "./",
+      "args": "",
+      "interpreter": "",
+      "interpreter_args": "",
+      "watch": false,
+      "exec_mode": "cluster_mode",
+      "error_file": "./logs/pm2-err.log",
+      "out_file": "./logs/pm2-out.log",
+      "merge_logs": true,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "autorestart": true,
+      "env": {
+        "NODE_ENV": "production",
+        "NEST_SERVER_PORT" : "8000",
+        "NEST_LOG_OUTPUT" : "file"
+      }
+    }
+  }
